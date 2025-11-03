@@ -1,0 +1,14 @@
+name: Prek checks
+on: [push, pull_request]
+
+jobs:
+  prek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: j178/prek-action@v1
+        with:
+          extra-args: "--all-files --skip no-commit-to-branch"
