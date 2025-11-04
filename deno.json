@@ -3,6 +3,7 @@
     "dev": "deno run --watch main.ts"
   },
   "imports": {
+    "@mistralai/mistralai": "npm:@mistralai/mistralai@^1.10.0",
     "@std/assert": "jsr:@std/assert@1",
     "@std/cli": "jsr:@std/cli@^1.0.23"
   }
